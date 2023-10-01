@@ -53,7 +53,7 @@ def products(request):
             #     }
             # ]
             'products': Product.objects.all(),
-            'category': ProductCategory.objects.all()
-    
+            'categories': ProductCategory.objects.all(),
     }
+
     return render(request, 'products/products.html', context)
